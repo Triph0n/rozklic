@@ -1,0 +1,66 @@
+================================================================================
+  PŘEKLADAČ ROZHODNUTÍ — NÁVOD KE SPUŠTĚNÍ NA POČÍTAČI A PŘIHLÁŠENÍ DO SOUTĚŽE
+================================================================================
+
+1. PROČ SE ZIP SOUBOR PO ROZBALENÍ SÁM NESPUSTIL?
+--------------------------------------------------------------------------------
+Tato aplikace není jednoduchý statický soubor ani jednoúčelový program (.exe),
+ale plnohodnotná full-stack webová aplikace (React + Tailwind + Express server
+propojený s Google Gemini AI pro analýzu textu a OCR snímků).
+
+Aby aplikace běžela na vašem počítači, potřebuje běhové prostředí Node.js.
+
+
+================================================================================
+2. NEJJEDNODUŠŠÍ CESTA: MÍT APLIKACI NA PLOŠE ZA 10 SEKUND (BEZ INSTALACE)
+================================================================================
+Aplikace už teď živě běží na internetu na této zabezpečené adrese:
+👉 https://ais-dev-aephwpzskbona37xupv55s-522978271835.europe-west2.run.app
+
+Jak si ji dát na plochu jako samostatnou ikonku:
+1. Otevřete výše uvedený odkaz v Google Chrome nebo Microsoft Edge.
+2. V Google Chrome:
+   - Klikněte vpravo nahoře na tři tečky (menu).
+   - Zvolte: "Uložit a sdílet" -> "Vytvořit zástupce..." (nebo "Nainstalovat aplikaci Překladač rozhodnutí").
+   - Zaškrtněte políčko "Otevřít jako okno".
+   - Klikněte na "Vytvořit".
+3. Na ploše se vám okamžitě objeví ikona "Překladač rozhodnutí", která se
+   otevírá v samostatném čistém okně bez lišt prohlížeče přesně jako nativní program!
+
+
+================================================================================
+3. JAK ROZJET ROZBALENÝ ZIP LOKÁLNĚ NA VAŠEM POČÍTAČI
+================================================================================
+Pokud chcete aplikaci spouštět z vlastního disku:
+
+Krok 1: Nainstalujte si Node.js
+- Stáhněte si bezplatný instalátor (doporučena verze LTS) z: https://nodejs.org/
+- Nainstalujte (stačí klikat Next -> Next -> Finish).
+
+Krok 2: Spuštění jedním klikem (ve Windows)
+- V rozbalené složce dvakrát klikněte na soubor:
+  spustit.bat
+- Skript sám nainstaluje potřebné knihovny a otevře aplikaci v prohlížeči
+  na adrese http://localhost:3000.
+
+Krok 3 (alternativně ručně přes Terminál / Příkazový řádek):
+- Otevřete příkazový řádek (CMD) v této složce.
+- Napište: npm install
+- Napište: npm run dev
+- Otevřete prohlížeč na: http://localhost:3000
+
+
+================================================================================
+4. JAK PROJEKT PŘIHLÁSIT DO SOUTĚŽE (MESIC.AI)
+================================================================================
+DŮLEŽITÉ: Do soutěže AI výzva pro Česko (mesic.ai) se NENAHRÁVÁ ZIP soubor!
+Formulář na webu https://mesic.ai/ vyžaduje:
+1. Odkaz na funkční běžící web (prototyp)
+2. Vyplnění 5 textových polí
+
+Odkaz pro porotu:
+https://ais-pre-aephwpzskbona37xupv55s-522978271835.europe-west2.run.app
+
+Všechny texty pro jednotlivá pole formuláře najdete přehledně sepsané
+v souboru: SOUTEZNI_PODKLADY_MESIC_AI.md
+nebo přímo v aplikaci v záložce "Podklady pro porotu".

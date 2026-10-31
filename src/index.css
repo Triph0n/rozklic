@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --paper: #FAF7F0;
+    --paper-warm: #F1ECE1;
+    --paper-deep: #E6DFD1;
+    --ink: #161412;
+    --ink-muted: #57524A;
+    --border-hairline: #DCD5C7;
+    --lagoon-deep: #0D3B3E;
+    --lagoon-soft: #E3EFEF;
+    --copper-warn: #9A3412;
+    --copper-soft: #FEF3C7;
+  }
+
+  body {
+    background-color: var(--paper);
+    color: var(--ink);
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  h1, h2, h3, .font-serif-display {
+    font-family: 'Fraunces', Georgia, serif;
+  }
+
+  .font-mono-tabular {
+    font-family: 'IBM Plex Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.bg-editorial-grid {
+  background-image: 
+    linear-gradient(to right, rgba(22, 20, 18, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(22, 20, 18, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.document-sheet-shadow {
+  box-shadow:
+    0 1px 2px rgba(22, 20, 18, 0.05),
+    0 12px 32px -8px rgba(22, 20, 18, 0.08);
+}
+
+.a4-paper-sheet {
+  background-color: #FFFFFF;
+  background-image: linear-gradient(to bottom, rgba(13, 59, 62, 0.03) 1px, transparent 1px);
+  background-size: 100% 28px;
+  box-shadow:
+    0 2px 4px rgba(22, 20, 18, 0.06),
+    0 20px 40px -12px rgba(22, 20, 18, 0.12);
+}
+
+@media print {
+  body {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+  }
+  header,
+  footer,
+  .no-print {
+    display: none !important;
+  }
+  .print-only-sheet {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+  }
+}

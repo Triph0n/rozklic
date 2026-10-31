@@ -1,0 +1,6 @@
+{
+  "name": "Překladač rozhodnutí — AI výzva pro Česko",
+  "description": "Srozumitelný překlad úředních, bankovních a pojišťovacích rozhodnutí s lokální anonymizací osobních údajů, ověřením citací v textu, deterministickým hlídáním lhůt včetně českých svátků a generátorem odvolání.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
